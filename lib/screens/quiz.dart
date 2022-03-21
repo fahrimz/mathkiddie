@@ -22,8 +22,11 @@ class _QuizState extends State<Quiz> {
   bool hasAnswered = false;
 
   void _changeQuiz() {
+    List<QuizItem> restOfquizzes =
+        quizItems.where((q) => q.question != quizItem.question).toList();
+
     setState(() {
-      quizItem = quizItems[getRandomNumber(max: quizItems.length)];
+      quizItem = restOfquizzes[getRandomNumber(max: restOfquizzes.length)];
       answerState = AnswerState.notAnswered;
       hasAnswered = false;
     });
