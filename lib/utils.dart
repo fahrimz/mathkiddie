@@ -51,4 +51,8 @@ class AppTextStyle {
     fontWeight: FontWeight.w600,
     color: AppColor.error,
   );
+
+  static const icon = TextStyle(
+    fontSize: 64,
+  );
 }

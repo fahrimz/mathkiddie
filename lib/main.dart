@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         primaryColor: AppColor.primary,
         backgroundColor: AppColor.background,
         scaffoldBackgroundColor: AppColor.background,
+        splashFactory: InkRipple.splashFactory,
       ),
       home: const Home(),
     );

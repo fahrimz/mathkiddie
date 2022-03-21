@@ -26,7 +26,7 @@ class Header extends StatelessWidget {
           tag: 'title',
           child: Text('mathkiddie', style: AppTextStyle.helper),
         ),
-        const SizedBox(), // Empty space
+        const SizedBox(width: 24), // Empty space
       ],
     );
   }

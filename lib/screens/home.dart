@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mathkiddie/screens/quiz.dart';
 import 'package:mathkiddie/utils.dart';
+import 'package:mathkiddie/widgets/button.dart';
 import 'package:mathkiddie/widgets/flight_shuttle_builder.dart';
 
 class Home extends StatelessWidget {
@@ -28,22 +29,15 @@ class Home extends StatelessWidget {
                 child: Text('mathkiddie', style: AppTextStyle.title),
               ),
               const SizedBox(height: 36),
-              SizedBox(
-                width: 200,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: AppColor.primary,
-                    padding: const EdgeInsets.all(12),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Quiz()),
-                    );
-                  },
-                  child: const Text('Start', style: AppTextStyle.button),
-                ),
-              )
+              AppButton(
+                text: 'start',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Quiz()),
+                  );
+                },
+              ),
             ],
           ),
         ),
