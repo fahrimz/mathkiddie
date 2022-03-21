@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mathkiddie/home.dart';
+import 'package:mathkiddie/screens/home.dart';
 import 'package:mathkiddie/utils.dart';
 
 void main() {

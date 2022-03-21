@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mathkiddie/quiz.dart';
+import 'package:mathkiddie/screens/quiz.dart';
 import 'package:mathkiddie/utils.dart';
-import 'package:mathkiddie/widgets.dart';
+import 'package:mathkiddie/widgets/flight_shuttle_builder.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Quiz()),
+                      MaterialPageRoute(builder: (context) => const Quiz()),
                     );
                   },
                   child: const Text('Start', style: AppTextStyle.button),
