@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 class AppColor {
@@ -55,4 +56,8 @@ class AppTextStyle {
   static const icon = TextStyle(
     fontSize: 64,
   );
+}
+
+int getRandomNumber({required int max, int? min}) {
+  return Random().nextInt(max) + (min ?? 0);
 }
