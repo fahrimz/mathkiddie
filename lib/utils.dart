@@ -16,7 +16,7 @@ class AppTextStyle {
   static const title = TextStyle(
     fontSize: 36,
     fontWeight: FontWeight.bold,
-    letterSpacing: 0.04,
+    letterSpacing: 2,
     color: AppColor.black,
   );
 
