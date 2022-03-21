@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mathkiddie/quiz.dart';
 import 'package:mathkiddie/utils.dart';
+import 'package:mathkiddie/widgets.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -20,7 +22,11 @@ class Home extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('mathkiddie', style: AppTextStyle.title),
+              const Hero(
+                flightShuttleBuilder: flightShuttleBuilder,
+                tag: 'title',
+                child: Text('mathkiddie', style: AppTextStyle.title),
+              ),
               const SizedBox(height: 36),
               SizedBox(
                 width: 200,
@@ -29,7 +35,12 @@ class Home extends StatelessWidget {
                     primary: AppColor.primary,
                     padding: const EdgeInsets.all(12),
                   ),
-                  onPressed: () => {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Quiz()),
+                    );
+                  },
                   child: const Text('Start', style: AppTextStyle.button),
                 ),
               )

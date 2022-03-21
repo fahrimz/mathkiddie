@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.poppinsTextTheme(),
         primaryColor: AppColor.primary,
         backgroundColor: AppColor.background,
+        scaffoldBackgroundColor: AppColor.background,
       ),
       home: const Home(),
     );
